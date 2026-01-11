@@ -1,0 +1,1934 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://i-lab.aegean.gr/kotis/ontologies/nk"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://i-lab.aegean.gr/kotis/ontologies/nk">
+    <Prefix name="" IRI="http://i-lab.aegean.gr/kotis/ontologies/NKM"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/terms/"/>
+    <Prefix name="nk" IRI="http://www.semanticweb.org/user/ontologies/2022/9/NKM#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="foaf" IRI="http://xmlns.com/foaf/0.1/#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>An ontology about Nikos Kazantzakis life and work</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal>Nikos Kazantzakis ontology</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Actor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Area"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Book"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#City"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Director"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Essay"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Film"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Novel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Play"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Poem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Poet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Relative"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TravelBook"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Worker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Writer"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dc:Location"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="foaf:term_Person"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="foaf:term_Project"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#basedon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#basedonthelifeof"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#bornIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#directed"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isfriendof"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#livedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#marriedto"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#playedin"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#relatedto"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#studied"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#traveledto"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#typed"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#writtenBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#wrote"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#birthdate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dateofdeath"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#duration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#firstName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#genre"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#geographic_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#lastName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#publisher"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#relation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#title"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Agglia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AgioOros"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alexandreia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Aniforos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Antibes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Askitiki"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Athens"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Berlin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cairo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CaptainMike"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Christ"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Colomvos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Crete"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dassin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GZorbas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Galateia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Greco"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Heraklion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Iaponia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ispania"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kazantzakis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LastTemptation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MKazantzakis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Madrid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Merkouri"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Naxos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Odyseia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ofis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Paris"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PoorChrist"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Prevelakis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rome"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Russia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Samiou"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sikelianos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sina"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sisters"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sodoma"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tertsines"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Toledo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vraxokipos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Xristodoulaki"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Xristos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Zorbas"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Actor"/>
+        <Class abbreviatedIRI="foaf:term_Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Area"/>
+        <Class abbreviatedIRI="dc:Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Book"/>
+        <Class abbreviatedIRI="foaf:term_Project"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#City"/>
+        <Class abbreviatedIRI="dc:Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Director"/>
+        <Class abbreviatedIRI="foaf:term_Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Essay"/>
+        <Class IRI="#Book"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Film"/>
+        <Class abbreviatedIRI="foaf:term_Project"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Novel"/>
+        <Class IRI="#Book"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Play"/>
+        <Class IRI="#Book"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Poem"/>
+        <Class IRI="#Book"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Poet"/>
+        <Class abbreviatedIRI="foaf:term_Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Relative"/>
+        <Class abbreviatedIRI="foaf:term_Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TravelBook"/>
+        <Class IRI="#Book"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Worker"/>
+        <Class abbreviatedIRI="foaf:term_Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Writer"/>
+        <Class abbreviatedIRI="foaf:term_Person"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Novel"/>
+        <Class IRI="#Play"/>
+        <Class IRI="#TravelBook"/>
+        <Class IRI="#Writer"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#TravelBook"/>
+        <NamedIndividual IRI="#Agglia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Area"/>
+        <NamedIndividual IRI="#AgioOros"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Alexandreia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Novel"/>
+        <NamedIndividual IRI="#Aniforos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Antibes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Essay"/>
+        <NamedIndividual IRI="#Askitiki"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Athens"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Berlin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Cairo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Novel"/>
+        <NamedIndividual IRI="#CaptainMike"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Film"/>
+        <NamedIndividual IRI="#Christ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Play"/>
+        <NamedIndividual IRI="#Colomvos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Area"/>
+        <NamedIndividual IRI="#Crete"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Director"/>
+        <NamedIndividual IRI="#Dassin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Worker"/>
+        <NamedIndividual IRI="#GZorbas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Relative"/>
+        <NamedIndividual IRI="#Galateia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Novel"/>
+        <NamedIndividual IRI="#Greco"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Heraklion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TravelBook"/>
+        <NamedIndividual IRI="#Iaponia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TravelBook"/>
+        <NamedIndividual IRI="#Ispania"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Writer"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Novel"/>
+        <NamedIndividual IRI="#LastTemptation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Relative"/>
+        <NamedIndividual IRI="#MKazantzakis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Madrid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#Merkouri"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Naxos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Poem"/>
+        <NamedIndividual IRI="#Odyseia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Novel"/>
+        <NamedIndividual IRI="#Ofis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Paris"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Novel"/>
+        <NamedIndividual IRI="#PoorChrist"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Writer"/>
+        <NamedIndividual IRI="#Prevelakis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Rome"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TravelBook"/>
+        <NamedIndividual IRI="#Russia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Relative"/>
+        <NamedIndividual IRI="#Samiou"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Poet"/>
+        <NamedIndividual IRI="#Sikelianos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Area"/>
+        <NamedIndividual IRI="#Sina"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Novel"/>
+        <NamedIndividual IRI="#Sisters"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Play"/>
+        <NamedIndividual IRI="#Sodoma"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Poem"/>
+        <NamedIndividual IRI="#Tertsines"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Toledo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Novel"/>
+        <NamedIndividual IRI="#Vraxokipos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Relative"/>
+        <NamedIndividual IRI="#Xristodoulaki"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Novel"/>
+        <NamedIndividual IRI="#Xristos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Novel"/>
+        <NamedIndividual IRI="#Zorbas"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#basedon"/>
+        <NamedIndividual IRI="#Christ"/>
+        <NamedIndividual IRI="#Xristos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#directed"/>
+        <NamedIndividual IRI="#Dassin"/>
+        <NamedIndividual IRI="#Christ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isfriendof"/>
+        <NamedIndividual IRI="#Dassin"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#marriedto"/>
+        <NamedIndividual IRI="#Dassin"/>
+        <NamedIndividual IRI="#Merkouri"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#traveledto"/>
+        <NamedIndividual IRI="#Dassin"/>
+        <NamedIndividual IRI="#Antibes"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isfriendof"/>
+        <NamedIndividual IRI="#GZorbas"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isfriendof"/>
+        <NamedIndividual IRI="#GZorbas"/>
+        <NamedIndividual IRI="#Sikelianos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#livedIn"/>
+        <NamedIndividual IRI="#GZorbas"/>
+        <NamedIndividual IRI="#AgioOros"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#marriedto"/>
+        <NamedIndividual IRI="#Galateia"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#bornIn"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+        <NamedIndividual IRI="#Heraklion"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isfriendof"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+        <NamedIndividual IRI="#Dassin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isfriendof"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+        <NamedIndividual IRI="#GZorbas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isfriendof"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+        <NamedIndividual IRI="#Merkouri"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isfriendof"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+        <NamedIndividual IRI="#Prevelakis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isfriendof"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+        <NamedIndividual IRI="#Sikelianos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#livedIn"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+        <NamedIndividual IRI="#Antibes"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#livedIn"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+        <NamedIndividual IRI="#Athens"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#livedIn"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+        <NamedIndividual IRI="#Naxos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#marriedto"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+        <NamedIndividual IRI="#Galateia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#marriedto"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+        <NamedIndividual IRI="#Samiou"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#relatedto"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+        <NamedIndividual IRI="#MKazantzakis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#relatedto"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+        <NamedIndividual IRI="#Xristodoulaki"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#studied"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+        <NamedIndividual IRI="#Athens"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#studied"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+        <NamedIndividual IRI="#Naxos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#traveledto"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+        <NamedIndividual IRI="#AgioOros"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#traveledto"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+        <NamedIndividual IRI="#Alexandreia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#traveledto"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+        <NamedIndividual IRI="#Berlin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#traveledto"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+        <NamedIndividual IRI="#Cairo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#traveledto"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+        <NamedIndividual IRI="#Madrid"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#traveledto"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+        <NamedIndividual IRI="#Paris"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#traveledto"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+        <NamedIndividual IRI="#Rome"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#traveledto"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+        <NamedIndividual IRI="#Sina"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#traveledto"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+        <NamedIndividual IRI="#Toledo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wrote"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+        <NamedIndividual IRI="#Agglia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wrote"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+        <NamedIndividual IRI="#Aniforos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wrote"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+        <NamedIndividual IRI="#Askitiki"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wrote"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+        <NamedIndividual IRI="#CaptainMike"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wrote"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+        <NamedIndividual IRI="#Colomvos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wrote"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+        <NamedIndividual IRI="#Greco"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wrote"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+        <NamedIndividual IRI="#Iaponia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wrote"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+        <NamedIndividual IRI="#Ispania"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wrote"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+        <NamedIndividual IRI="#LastTemptation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wrote"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+        <NamedIndividual IRI="#Odyseia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wrote"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+        <NamedIndividual IRI="#Ofis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wrote"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+        <NamedIndividual IRI="#PoorChrist"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wrote"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+        <NamedIndividual IRI="#Sisters"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wrote"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+        <NamedIndividual IRI="#Sodoma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wrote"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+        <NamedIndividual IRI="#Tertsines"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wrote"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+        <NamedIndividual IRI="#Vraxokipos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wrote"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+        <NamedIndividual IRI="#Xristos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wrote"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+        <NamedIndividual IRI="#Zorbas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#marriedto"/>
+        <NamedIndividual IRI="#MKazantzakis"/>
+        <NamedIndividual IRI="#Xristodoulaki"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#relatedto"/>
+        <NamedIndividual IRI="#MKazantzakis"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isfriendof"/>
+        <NamedIndividual IRI="#Merkouri"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#marriedto"/>
+        <NamedIndividual IRI="#Merkouri"/>
+        <NamedIndividual IRI="#Dassin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#playedin"/>
+        <NamedIndividual IRI="#Merkouri"/>
+        <NamedIndividual IRI="#Christ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#traveledto"/>
+        <NamedIndividual IRI="#Merkouri"/>
+        <NamedIndividual IRI="#Antibes"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isfriendof"/>
+        <NamedIndividual IRI="#Prevelakis"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#livedIn"/>
+        <NamedIndividual IRI="#Prevelakis"/>
+        <NamedIndividual IRI="#Athens"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#marriedto"/>
+        <NamedIndividual IRI="#Samiou"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#typed"/>
+        <NamedIndividual IRI="#Samiou"/>
+        <NamedIndividual IRI="#Askitiki"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isfriendof"/>
+        <NamedIndividual IRI="#Sikelianos"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#relatedto"/>
+        <NamedIndividual IRI="#Sikelianos"/>
+        <NamedIndividual IRI="#GZorbas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#traveledto"/>
+        <NamedIndividual IRI="#Sikelianos"/>
+        <NamedIndividual IRI="#AgioOros"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#marriedto"/>
+        <NamedIndividual IRI="#Xristodoulaki"/>
+        <NamedIndividual IRI="#MKazantzakis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#relatedto"/>
+        <NamedIndividual IRI="#Xristodoulaki"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#basedonthelifeof"/>
+        <NamedIndividual IRI="#Zorbas"/>
+        <NamedIndividual IRI="#GZorbas"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#date"/>
+        <NamedIndividual IRI="#Agglia"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1941</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description"/>
+        <NamedIndividual IRI="#Agglia"/>
+        <Literal>Γραμμένο στις αρχές τού Δευτέρου Παγκοσμίου Πολέμου, το Ταξιδεύοντας: Αγγλία είναι ίσως το πιο συγκινητικό απ’ όλα τα ταξιδιωτικά βιβλία τού Καζαντζάκη. Στην Αγγλία εξετάζει κάτι που αισθάνεται πως είναι ξένο, μια κοινωνία που τον συναρπάζει με την αυστηρή της ταξική δομή και αίσθηση της ιστορίας, αλλά και που ταυτόχρονα τον απωθεί με την έλλειψη αυθορμητισμού της και τον φόβο της για τις συγκινήσεις.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#publisher"/>
+        <NamedIndividual IRI="#Agglia"/>
+        <Literal>Πυρσός</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#title"/>
+        <NamedIndividual IRI="#Agglia"/>
+        <Literal>Ταξιδεύοντας: Αγγλία</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#date"/>
+        <NamedIndividual IRI="#Aniforos"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2022</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description"/>
+        <NamedIndividual IRI="#Aniforos"/>
+        <Literal>Στα μέσα της δεκαετίας του &apos;40, αμέσως μετά τον Ζορμπά, ο Καζαντζάκης γράφει τον Ανήφορο, ένα κείμενο εσωτερικό, που το διακρίνει μελαγχολία βαθιά και λυτρωτική. Η δράση του εκτυλίσσεται αμέσως μετά τον πόλεμο, σε Κρήτη και Αγγλία. Ο Κοσμάς, έπειτα από απουσία είκοσι χρόνων και την ενεργή συμμετοχή του στον πόλεμο, επιστρέφει στην πατρίδα του, το Μεγάλο Κάστρο, μαζί με την Εβραία γυναίκα του, τη Νοεμή, η οποία κουβαλάει την πανανθρώπινη μνήμη του Ολοκαυτώματος, και μαζί της την ερώτηση για την αξία της ζωής.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#publisher"/>
+        <NamedIndividual IRI="#Aniforos"/>
+        <Literal>Διόπτρα</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#title"/>
+        <NamedIndividual IRI="#Aniforos"/>
+        <Literal>Ο Ανήφορος</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#date"/>
+        <NamedIndividual IRI="#Askitiki"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1945</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description"/>
+        <NamedIndividual IRI="#Askitiki"/>
+        <Literal>Η Ασκητική είναι ένα φιλοσοφικό μανιφέστο που διέπεται από έναν οραματικό-προφητικό τόνο, εμποτισμένο με τη λυρικότητα του δημιουργού της. Το νόημα της ζωής και της ύπαρξης συμπυκνώνεται σε έναν συνεχή αγώνα κατά το «ανηφόρισμα του ανθρώπου», όπου το ηθικό «χρέος» συμβαδίζει με την υπαρξιακή «κραυγή», δίνοντας φωνή στην «ελευθερία», στην πλήρη αποδέσμευση της ανθρώπινης οντότητας από κάθε φόβο αλλά και κάθε ελπίδα.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#publisher"/>
+        <NamedIndividual IRI="#Askitiki"/>
+        <Literal>Τυπογραφεία Αδερφών Σ. Ταρουσόπουλου</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#title"/>
+        <NamedIndividual IRI="#Askitiki"/>
+        <Literal>Ασκητική - Salvatores dei</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#date"/>
+        <NamedIndividual IRI="#CaptainMike"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1953</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description"/>
+        <NamedIndividual IRI="#CaptainMike"/>
+        <Literal>«Ο Καπετάν Μιχάλης» είναι ένα από τα τελευταία μυθιστορήματά του συγγραφέα και θεωρείται από τα κορυφαία της νεοελληνικής λογοτεχνίας. Το βιβλίο κυκλοφόρησε για πρώτη φορά το 1953 από τις εκδόσεις Μαυρίδη. Η υπόθεση τοποθετείται στην κρητική επανάσταση του 1889. Ο κεντρικός ήρωας, ο καπετάν Μιχάλης, ένας άγριος και ανυπότακτος πολεμιστής, έχει ορκιστεί να είναι μαυροντυμένος, αξύριστος και αγέλαστος μέχρι να ελευθερωθεί η Κρήτη. Όταν όμως συναντά την Εμινέ, τη γυναίκα του αδελφοποιτού του, του Νουρήμπεη, τον κυριεύει «ένας δαίμονας»· παρά τις προσπάθειές του δεν καταφέρνει να τη βγάλει από το μυαλό του.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#publisher"/>
+        <NamedIndividual IRI="#CaptainMike"/>
+        <Literal>Μαυρίδης</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#title"/>
+        <NamedIndividual IRI="#CaptainMike"/>
+        <Literal>Ο Καπετάν Μιχάλης</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#date"/>
+        <NamedIndividual IRI="#Christ"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1957</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#duration"/>
+        <NamedIndividual IRI="#Christ"/>
+        <Literal>2 ώρες και 7 λεπτά</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#title"/>
+        <NamedIndividual IRI="#Christ"/>
+        <Literal>Celui qui doit mourir</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#date"/>
+        <NamedIndividual IRI="#Colomvos"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1956</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description"/>
+        <NamedIndividual IRI="#Colomvos"/>
+        <Literal>Το 1949 ο Καζαντζάκης γράφει ένα από τα αρτιότερα έργα του: Χριστόφορος Κολόμβος ή Το χρυσό μήλο. Η Ισπανία στα τέλη του 15ου αι. είναι σχεδόν κατεστραμμένη από μια σειρά πολέμων με σκοπό την εκδίωξη των Μαυριτανών και των Εβραίων. Οι πόλεμοι αυτοί ήταν νικηφόροι για το στέμμα, αλλά οικονομικά καταστροφικοί. Οι τολμηροί αναζητούν νέες πλουτοπαραγωγικές περιοχές, καθώς αρχίζει να γίνεται γνωστό ότι η γη είναι μεγαλύτερη και διαφορετική από ό,τι πίστευαν μέχρι τότε.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#publisher"/>
+        <NamedIndividual IRI="#Colomvos"/>
+        <Literal>Δίφρος</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#title"/>
+        <NamedIndividual IRI="#Colomvos"/>
+        <Literal>Χριστόφορος Κολόμβος</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#birthdate"/>
+        <NamedIndividual IRI="#Dassin"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1911</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dateofdeath"/>
+        <NamedIndividual IRI="#Dassin"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2008</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#firstName"/>
+        <NamedIndividual IRI="#Dassin"/>
+        <Literal>Ζύλ</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lastName"/>
+        <NamedIndividual IRI="#Dassin"/>
+        <Literal>Ντασέν</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#birthdate"/>
+        <NamedIndividual IRI="#GZorbas"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1865</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dateofdeath"/>
+        <NamedIndividual IRI="#GZorbas"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1941</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description"/>
+        <NamedIndividual IRI="#GZorbas"/>
+        <Literal>Ο Αλέξης Ζορμπάς (πραγματικό όνομα Γεώργιος Ζορμπάς) ήταν Έλληνας και γεννήθηκε στο Καταφύγι, στα Πιέρια όρη.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#firstName"/>
+        <NamedIndividual IRI="#GZorbas"/>
+        <Literal>Γεώργιος</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lastName"/>
+        <NamedIndividual IRI="#GZorbas"/>
+        <Literal>Ζορμπάς</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#birthdate"/>
+        <NamedIndividual IRI="#Galateia"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1881</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dateofdeath"/>
+        <NamedIndividual IRI="#Galateia"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1963</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#firstName"/>
+        <NamedIndividual IRI="#Galateia"/>
+        <Literal>Γαλάτεια</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lastName"/>
+        <NamedIndividual IRI="#Galateia"/>
+        <Literal>Αλεξίου</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#date"/>
+        <NamedIndividual IRI="#Greco"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1961</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description"/>
+        <NamedIndividual IRI="#Greco"/>
+        <Literal>Η Αναφορά στον Γκρέκο» πρόκειται για ένα είδος πνευματικής αυτοβιογραφίας, σχετικά με τους στόχους και τις προσπάθειές του Νίκου Καζαντζάκη. Ξεκινάει από τα παιδικά του χρόνια και σταματάει στην ημέρα της «κρητικής ματιάς» και στη σύλληψη της Οδύσσειας. Δεν αφηγείται το σύνολο της ζωής του, αλλά παρουσιάζει τους σταθμούς της πνευματικής του πορείας, χωρίς να ακολουθεί την αυστηρή χρονολογική σειρά της πραγματικής του βιογραφίας.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#publisher"/>
+        <NamedIndividual IRI="#Greco"/>
+        <Literal>Διόπτρα</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#title"/>
+        <NamedIndividual IRI="#Greco"/>
+        <Literal>Αναφορά στον Γκρέκο</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#date"/>
+        <NamedIndividual IRI="#Iaponia"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1938</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description"/>
+        <NamedIndividual IRI="#Iaponia"/>
+        <Literal>Το βιβλίο Ταξιδεύοντας: Ιαπωνία - Κίνα είναι το ιστορικό-λογοτεχνικό δημιούργημα του Νίκου Καζαντζάκη από το πρώτο ταξίδι του στην Ιαπωνία και στην Κίνα το 1935. Εξεδόθη για πρώτη φορά από τον «Πυρσό» το 1938. Ο Καζαντζάκης είχε πάει τότε στις δυο χώρες μόνος, χωρίς την Ελένη του, ως δημοσιογράφος απεσταλμένος της αθηναϊκής εφημερίδος «Ακρόπολις».</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#publisher"/>
+        <NamedIndividual IRI="#Iaponia"/>
+        <Literal>Πυρσός</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#title"/>
+        <NamedIndividual IRI="#Iaponia"/>
+        <Literal>Ταξιδεύοντας: Ιαπωνία - Κίνα</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#date"/>
+        <NamedIndividual IRI="#Ispania"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1937</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description"/>
+        <NamedIndividual IRI="#Ispania"/>
+        <Literal>Το «Ταξιδεύοντας-Ισπανία» αποτελείται από τις ταξιδιωτικές περιγραφές του συγγραφέα στις επισκέψεις του στην Ισπανία: 1926, 1932-1933, 1936· τρεις διαφορετικές εποχές στις οποίες παρουσιάζεται η ισπανική χώρα σε ειρηνική και εμφύλια περίοδο με απίστευτες περιγραφικές εικόνες σε επίπεδο πραγματικό, ιδεολογικό και μυθοπλαστικό,  αποκαλύπτοντας ένα άλλο πρόσωπο της Ισπανίας από τα μάτια ενός έλληνα συγγραφέα.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#publisher"/>
+        <NamedIndividual IRI="#Ispania"/>
+        <Literal>Πυρσός</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#title"/>
+        <NamedIndividual IRI="#Ispania"/>
+        <Literal>Ταξιδεύοντας: Ισπανία&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#birthdate"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1883</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dateofdeath"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1957</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#firstName"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+        <Literal>Νίκος</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lastName"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+        <Literal>Καζαντζάκης</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#relation"/>
+        <NamedIndividual IRI="#Kazantzakis"/>
+        <Literal>Γιός</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#date"/>
+        <NamedIndividual IRI="#LastTemptation"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1955</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description"/>
+        <NamedIndividual IRI="#LastTemptation"/>
+        <Literal>Ο Τελευταίος πειρασμός είναι έργο της ώριμης ηλικίας του Νίκου Καζαντζάκη και εκφράζει την ιδιαίτερη φιλοσοφία ζωής του, ενώ θέμα του είναι ο ίδιος ο Χριστός, αυτός που ονομάζεται Ιησούς. Κατά τη μυθοπλασία του Καζαντζάκη, ο Χριστός σε μια απειροελάχιστη στιγμή βυθίζεται σε όνειρο και βλέπει ότι είναι ένας απλός άνθρωπος που ζει μια καθημερινή ζωή. Μόλις όμως συνέρχεται, επανεισέρχεται στη θειότητα της αποστολής Του, στην αυταπάρνηση και τη θυσία για τη σωτηρία του κόσμου.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#publisher"/>
+        <NamedIndividual IRI="#LastTemptation"/>
+        <Literal>Δίφρος</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#title"/>
+        <NamedIndividual IRI="#LastTemptation"/>
+        <Literal>Ο Τελευταίος Πειρασμός</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#birthdate"/>
+        <NamedIndividual IRI="#MKazantzakis"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1856</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dateofdeath"/>
+        <NamedIndividual IRI="#MKazantzakis"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1932</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#firstName"/>
+        <NamedIndividual IRI="#MKazantzakis"/>
+        <Literal>Μιχάλης</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lastName"/>
+        <NamedIndividual IRI="#MKazantzakis"/>
+        <Literal>Καζαντζάκης</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#relation"/>
+        <NamedIndividual IRI="#MKazantzakis"/>
+        <Literal>Πατέρας</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#birthdate"/>
+        <NamedIndividual IRI="#Merkouri"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1920</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dateofdeath"/>
+        <NamedIndividual IRI="#Merkouri"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1994</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#firstName"/>
+        <NamedIndividual IRI="#Merkouri"/>
+        <Literal>Μελίνα</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lastName"/>
+        <NamedIndividual IRI="#Merkouri"/>
+        <Literal>Μερκούρη</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#date"/>
+        <NamedIndividual IRI="#Odyseia"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1938</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description"/>
+        <NamedIndividual IRI="#Odyseia"/>
+        <Literal>Η Οδύσσεια είναι μεγαλόπνοο έπος του Νίκου Καζαντζάκη που θέμα του έχει τις νέες περιπλανήσεις του ομηρικού ήρωα μετά την επιστροφή του στην Ιθάκη μέχρι τον θάνατό του. Είναι γραμμένη σε ιαμβικό δεκαεπτασύλλαβο στίχο (στο σύνολο 33.333 στίχοι) και χωρίζεται σε 24 ραψωδίες, όσες και αυτή του Ομήρου.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#publisher"/>
+        <NamedIndividual IRI="#Odyseia"/>
+        <Literal>Πυρσός</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#title"/>
+        <NamedIndividual IRI="#Odyseia"/>
+        <Literal>Οδύσεια</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#date"/>
+        <NamedIndividual IRI="#Ofis"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1906</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description"/>
+        <NamedIndividual IRI="#Ofis"/>
+        <Literal>Το «Όφις και Κρίνο» είναι το πρώτο βιβλίο του Νίκου Καζαντζάκη και αποτελεί προάγγελο της οικουμενικής λογοτεχνικής δημιουργίας του. Πρόκειται για ένα εκρηκτικό ερωτικό βιβλίο, στο οποίο, μαζί με τις εφηβικές εμπειρίες του, καταθέτει φύτρα της κοσμοθεωρίας του και ινδάλματα του νου και της καρδίας του</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#title"/>
+        <NamedIndividual IRI="#Ofis"/>
+        <Literal>Όφις και κρίνο</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#date"/>
+        <NamedIndividual IRI="#PoorChrist"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1954</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description"/>
+        <NamedIndividual IRI="#PoorChrist"/>
+        <Literal>Ο Φτωχούλης του Θεού» γράφτηκε το 1953 στην Αντίμπ. Πρόκειται για μια μυθιστορηματική βιογραφία του Αγίου Φραγκίσκου της Ασίζης. O Φράτε Λεόνε, ένας ταπεινός ζητιάνος που περιπλανιέται αναζητώντας το Θεό, συναντά τον Φραγκίσκο ένα πλούσιο αρχοντόπουλο που βασανίζεται από παρόμοιες αναζητήσεις. Εκεί ξεκινούν ένα κοινό πνευματικό ταξίδι αναζήτησης του Θεού και διάδοσης του λόγου του.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#publisher"/>
+        <NamedIndividual IRI="#PoorChrist"/>
+        <Literal>Εφημερίδα Ελευθερία</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#title"/>
+        <NamedIndividual IRI="#PoorChrist"/>
+        <Literal>Ο Φτωχούλης του Θεού</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#birthdate"/>
+        <NamedIndividual IRI="#Prevelakis"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1909</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dateofdeath"/>
+        <NamedIndividual IRI="#Prevelakis"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1986</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description"/>
+        <NamedIndividual IRI="#Prevelakis"/>
+        <Literal>Σε μια από τις σύντομες παραμονές του Νίκου Καζαντζάκη στην Αθήνα, το 1926, τον επισκέπτεται ένας δεκαεπτάχρονος μαθητής, ο Παντελής Πρεβελάκης, ο επιστήθιος φίλος και αφοσιωμένος θαυμαστής που θα του μείνει πιστός μέχρι το θάνατό του.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#firstName"/>
+        <NamedIndividual IRI="#Prevelakis"/>
+        <Literal>Παντελής</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lastName"/>
+        <NamedIndividual IRI="#Prevelakis"/>
+        <Literal>Πρεβελάκης</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#date"/>
+        <NamedIndividual IRI="#Russia"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1956</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description"/>
+        <NamedIndividual IRI="#Russia"/>
+        <Literal>Στο διαχρονικό αυτό ταξιδιωτικό βιβλίο, όπου εύλογα δεσπόζει η Ρωσική Επανάσταση, ο συγγραφέας συγκέντρωσε, όπως ο ίδιος λέγει στον πρόλογό του, ό,τι είδε, ό,τι στοχάστηκε και ένιωσε στην απέραντη χώρα, στα εξωτικά της τοπία, στις «βουερές πολιτείες», στα «καταχιόνιστα χωριά» και στις «έρημες στέπες» της.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#publisher"/>
+        <NamedIndividual IRI="#Russia"/>
+        <Literal>Δίφρος</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#title"/>
+        <NamedIndividual IRI="#Russia"/>
+        <Literal>Ταξιδεύοντας: Ρουσία</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#birthdate"/>
+        <NamedIndividual IRI="#Samiou"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1903</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dateofdeath"/>
+        <NamedIndividual IRI="#Samiou"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2004</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#firstName"/>
+        <NamedIndividual IRI="#Samiou"/>
+        <Literal>Ελένη</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lastName"/>
+        <NamedIndividual IRI="#Samiou"/>
+        <Literal>Σαμίου</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#birthdate"/>
+        <NamedIndividual IRI="#Sikelianos"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1884</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dateofdeath"/>
+        <NamedIndividual IRI="#Sikelianos"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1951</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#firstName"/>
+        <NamedIndividual IRI="#Sikelianos"/>
+        <Literal>Άγγελος</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lastName"/>
+        <NamedIndividual IRI="#Sikelianos"/>
+        <Literal>Σικελιανός</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#date"/>
+        <NamedIndividual IRI="#Sisters"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1965</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description"/>
+        <NamedIndividual IRI="#Sisters"/>
+        <Literal>Οι “Αδερφοφάδες” μιλούν για την αδελφοκτόνο σύγκρουση σε ένα χωριό κατά τον Ελληνικό Εμφύλιο στα τέλη τής δεκαετίας τού 1940. Πολλοί από τους χωριανούς, μαζί και ο Καπετάν Δράκος, ο γιος τού εφημέριου, ο παπα-Γιάνναρος, πήραν τα βουνά και ενώθηκαν με τους κομμουνιστές αντάρτες. Είναι Μεγάλη Εβδομάδα και, με τον φόνο, τον θάνατο και την καθημερινή καταστροφή, ο παπα-Γιάνναρος αισθάνεται ότι κουβαλάει στους ώμους του τις αμαρτίες τού κόσμου.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#publisher"/>
+        <NamedIndividual IRI="#Sisters"/>
+        <Literal>Διόπτρα</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#title"/>
+        <NamedIndividual IRI="#Sisters"/>
+        <Literal>Οι Αδερφοφάδες</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#date"/>
+        <NamedIndividual IRI="#Sodoma"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1948</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description"/>
+        <NamedIndividual IRI="#Sodoma"/>
+        <Literal>Στη βιβλική αυτή τραγωδία του Καζαντζάκη ο υπερμεγέθης ήρωας στο έργο είναι απόλυτα αρνητικός και επαναστατημένος. Δεν του αρέσει ούτε το δημιούργημα ούτε ο δημιουργός. Στέκει απέναντί του σαν ίσος προς ίσον στην υπερηφάνεια και του αντιστέκεται. Ο εαυτός του επίσης του είναι αδιάφορος: ο εγωισμός του είναι υψηλότερος, μεταφυσικός.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#publisher"/>
+        <NamedIndividual IRI="#Sodoma"/>
+        <Literal>Εστία</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#publisher"/>
+        <NamedIndividual IRI="#Sodoma"/>
+        <Literal>Σόδομα και Γόμορρα</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#date"/>
+        <NamedIndividual IRI="#Tertsines"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1960</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description"/>
+        <NamedIndividual IRI="#Tertsines"/>
+        <Literal>Είκοσι ένα ποιήματα σε «τέρτσα ρίμα» («κάντα» ή «τραγούδια» τα χαρακτήριζε ο δημιουργός τους) περιέχονται στο βιβλίο Τερτσίνες. Ο Νίκος Καζαντζάκης τα συνέθεσε σε διάστημα πέντε ετών, από τα τέλη τού 1932 μέχρι τα μέσα του 1937. Κυρίως αποτυπώνουν και υμνούν μορφές που μελέτησε, θαύμασε, τον σημάδεψαν και τον επηρέασαν βαθιά στον πνευματικό και βιοτικό του ανήφορο.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#publisher"/>
+        <NamedIndividual IRI="#Tertsines"/>
+        <Literal>Κωνσταντινίδη και Μιχαλά</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#title"/>
+        <NamedIndividual IRI="#Tertsines"/>
+        <Literal>Τερτσίνες</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#date"/>
+        <NamedIndividual IRI="#Vraxokipos"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1960</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description"/>
+        <NamedIndividual IRI="#Vraxokipos"/>
+        <Literal>Το 1935 ο Νίκος Καζαντζάκης ταξίδεψε στην Ιαπωνία. Καρπός του ταξιδιού του αυτού ήταν Ο Βραχόκηπος, που δεν αποτελεί απλώς μια παράξενη απόπειρα επεξήγησης της Ασκητικής ή άλλο ένα Ταξιδεύοντας, αλλά «το περίπαθο μυθιστόρημα μιας ευρωπαϊκής ψυχής που γυρεύει ν’ ανανεωθεί από την επαφή με τη γοητευτική, επικίντυνη κι ηρωική ψυχή της Άπω Ανατολής»</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#publisher"/>
+        <NamedIndividual IRI="#Vraxokipos"/>
+        <Literal>Εστία</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#title"/>
+        <NamedIndividual IRI="#Vraxokipos"/>
+        <Literal>Ο βραχόκηπος</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#birthdate"/>
+        <NamedIndividual IRI="#Xristodoulaki"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1862</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dateofdeath"/>
+        <NamedIndividual IRI="#Xristodoulaki"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1932</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#firstName"/>
+        <NamedIndividual IRI="#Xristodoulaki"/>
+        <Literal>Μαρία</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lastName"/>
+        <NamedIndividual IRI="#Xristodoulaki"/>
+        <Literal>Χριστοδουλάκη</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#relation"/>
+        <NamedIndividual IRI="#Xristodoulaki"/>
+        <Literal>Μητέρα</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#date"/>
+        <NamedIndividual IRI="#Xristos"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1953</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description"/>
+        <NamedIndividual IRI="#Xristos"/>
+        <Literal>Το μυθιστόρημα «Ο Χριστός Ξανασταυρώνεται» είναι το έργο που παρουσιάζει έναν σύγχρονο καθημερινό «Χριστό» και τα πάθη του. Γράφτηκε το 1948 στην Αντίμπ. Το βιβλίο έχει μεταφραστεί στα γαλλικά, αγγλικά και ισπανικά. Το βιβλίο διασκευάστηκε για τον κινηματογράφο το 1957, σε σκηνοθεσία Ζυλ Ντασσέν και πρωταγωνίστρια τη Μελίνα Μερκούρη.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#publisher"/>
+        <NamedIndividual IRI="#Xristos"/>
+        <Literal>Μαυρίδης</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#title"/>
+        <NamedIndividual IRI="#Xristos"/>
+        <Literal>Ο Χριστός Ξανασταυρώνεται</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#date"/>
+        <NamedIndividual IRI="#Zorbas"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1946</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description"/>
+        <NamedIndividual IRI="#Zorbas"/>
+        <Literal>Ο Βίος και πολιτεία του Αλέξη Ζορμπά είναι ένα από τα γνωστότερα και ίσως το πιο αγαπητό στο κοινό μυθιστόρημα του Νίκου Καζαντζάκη, που κυκλοφόρησε για πρώτη φορά στην Αθήνα το 1946. Βασίζεται στη ζωή του Γεωργίου Ζορμπά. Ο μυθιστορηματικός «Αλέξης Ζορμπάς» υπήρξε πραγματικό πρόσωπο που πρωτοσυναντήθηκε με τον Καζαντζάκη στο Άγιο Όρος το 1914, όπου έγιναν φίλοι. Το 1917 ο Καζαντζάκης υπογράφει ένα συμβόλαιο μίσθωσης ορυχείου στην Πραστοβά της Μάνης και προσλαμβάνει ως βασικό του συνεργάτη τον Γιώργη Ζορμπά. Η επιχείρηση αποτυγχάνει, αλλά θα χρησιμοποιηθεί ως βιωματική πρώτη ύλη για το μυθιστόρημα.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#publisher"/>
+        <NamedIndividual IRI="#Zorbas"/>
+        <Literal>Διόπτρα</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#title"/>
+        <NamedIndividual IRI="#Zorbas"/>
+        <Literal>Βίος και πολιτεία του Αλέξη Ζορμπά</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#writtenBy"/>
+        <ObjectProperty IRI="#wrote"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#basedon"/>
+        <Class IRI="#Film"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#basedonthelifeof"/>
+        <Class abbreviatedIRI="foaf:term_Project"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#bornIn"/>
+        <Class abbreviatedIRI="foaf:term_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#directed"/>
+        <Class IRI="#Director"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isfriendof"/>
+        <Class abbreviatedIRI="foaf:term_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#livedIn"/>
+        <Class abbreviatedIRI="foaf:term_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#marriedto"/>
+        <Class abbreviatedIRI="foaf:term_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#playedin"/>
+        <Class IRI="#Actor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#relatedto"/>
+        <Class abbreviatedIRI="foaf:term_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#studied"/>
+        <Class abbreviatedIRI="foaf:term_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#traveledto"/>
+        <Class abbreviatedIRI="foaf:term_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#writtenBy"/>
+        <Class IRI="#Book"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#wrote"/>
+        <Class IRI="#Writer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#basedon"/>
+        <Class IRI="#Novel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#basedonthelifeof"/>
+        <Class abbreviatedIRI="foaf:term_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#bornIn"/>
+        <Class abbreviatedIRI="dc:Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#directed"/>
+        <Class IRI="#Film"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isfriendof"/>
+        <Class abbreviatedIRI="foaf:term_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#livedIn"/>
+        <Class abbreviatedIRI="dc:Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#marriedto"/>
+        <Class abbreviatedIRI="foaf:term_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#playedin"/>
+        <Class IRI="#Film"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#relatedto"/>
+        <Class abbreviatedIRI="foaf:term_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#studied"/>
+        <Class abbreviatedIRI="dc:Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#traveledto"/>
+        <Class abbreviatedIRI="dc:Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#typed"/>
+        <Class IRI="#Book"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#writtenBy"/>
+        <Class IRI="#Writer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#wrote"/>
+        <Class IRI="#Book"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#geographic_name"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#birthdate"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#dateofdeath"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#birthdate"/>
+        <Class abbreviatedIRI="foaf:term_Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#date"/>
+        <Class IRI="#Book"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dateofdeath"/>
+        <Class abbreviatedIRI="foaf:term_Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#description"/>
+        <Class abbreviatedIRI="foaf:term_Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#description"/>
+        <Class abbreviatedIRI="foaf:term_Project"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#duration"/>
+        <Class IRI="#Film"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#firstName"/>
+        <Class abbreviatedIRI="foaf:term_Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#genre"/>
+        <Class IRI="#Film"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#geographic_name"/>
+        <Class abbreviatedIRI="dc:Location"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#lastName"/>
+        <Class abbreviatedIRI="foaf:term_Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#publisher"/>
+        <Class IRI="#Book"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#relation"/>
+        <Class abbreviatedIRI="foaf:term_Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#title"/>
+        <Class abbreviatedIRI="foaf:term_Project"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#birthdate"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#date"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dateofdeath"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#description"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#duration"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#firstName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#genre"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#geographic_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#lastName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#publisher"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#relation"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#title"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Actor</IRI>
+        <Literal>From The Film ontology http://semantics.id/ns/example/film</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Area</IRI>
+        <Literal>From DBpedia Ontology https://dbpedia.org/ontology/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Area</IRI>
+        <Literal>Area</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Book</IRI>
+        <Literal>From Schema.org https://schema.org/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Book</IRI>
+        <Literal>Book</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#City</IRI>
+        <Literal>From Schema.org https://schema.org/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#City</IRI>
+        <Literal>City</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Director</IRI>
+        <Literal>From The Film ontology http://semantics.id/ns/example/film</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Essay</IRI>
+        <Literal>Essay</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Film</IRI>
+        <Literal>From The Film ontology http://semantics.id/ns/example/film</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Novel</IRI>
+        <Literal>From DBpedia Ontology https://dbpedia.org/ontology/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Novel</IRI>
+        <Literal>Novel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Play</IRI>
+        <Literal>From DBpedia Ontology https://dbpedia.org/ontology/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Play</IRI>
+        <Literal>Play</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Poem</IRI>
+        <Literal>From DBpedia Ontology https://dbpedia.org/ontology/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Poem</IRI>
+        <Literal>Poem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Poet</IRI>
+        <Literal>From GND Ontology https://d-nb.info/standards/elementset/gnd</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Poet</IRI>
+        <Literal>Poet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Relative</IRI>
+        <Literal>From DBpedia Ontology https://dbpedia.org/ontology/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Relative</IRI>
+        <Literal>Relative</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TravelBook</IRI>
+        <Literal>Travel Book</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Worker</IRI>
+        <Literal>Worker</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Writer</IRI>
+        <Literal>From DBpedia Ontology https://dbpedia.org/ontology/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Writer</IRI>
+        <Literal>Writer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#basedon</IRI>
+        <Literal>From DBpedia Ontology https://dbpedia.org/ontology/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#basedon</IRI>
+        <Literal>basedon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#birthdate</IRI>
+        <Literal>From FOAF ontology http://xmlns.com/foaf/0.1/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#date</IRI>
+        <Literal>From Dublin Core ontology http://purl.org/dc/elements/1.1/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#dateofdeath</IRI>
+        <Literal>From GND Ontology https://d-nb.info/standards/elementset/gnd</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#description</IRI>
+        <Literal>From Dublin Core ontology http://purl.org/dc/elements/1.1/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#duration</IRI>
+        <Literal>From The Film ontology http://semantics.id/ns/example/film</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#firstName</IRI>
+        <Literal>From FOAF ontology http://xmlns.com/foaf/0.1/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#genre</IRI>
+        <Literal>From The Film ontology http://semantics.id/ns/example/film</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#geographic_name</IRI>
+        <Literal>From ISA Programme Location ontology http://www.w3.org/ns/locn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#lastName</IRI>
+        <Literal>From FOAF ontology http://xmlns.com/foaf/0.1/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#publisher</IRI>
+        <Literal>From Dublin Core ontology http://purl.org/dc/elements/1.1/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#relatedto</IRI>
+        <Literal>From SIOC Core Ontology http://rdfs.org/sioc/spec/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#relation</IRI>
+        <Literal>From Dublin Core ontology http://purl.org/dc/elements/1.1/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#title</IRI>
+        <Literal>From Dublin Core ontology http://purl.org/dc/elements/1.1/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dc:Location</AbbreviatedIRI>
+        <Literal>From DublinCore ontology http://purl.org/dc/terms/Location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dc:Location</AbbreviatedIRI>
+        <Literal>Location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>foaf:term_Person</AbbreviatedIRI>
+        <Literal>From FOAF ontology http://xmlns.com/foaf/0.1/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>foaf:term_Person</AbbreviatedIRI>
+        <Literal>Person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>foaf:term_Project</AbbreviatedIRI>
+        <Literal>From FOAF ontology http://xmlns.com/foaf/0.1/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>foaf:term_Project</AbbreviatedIRI>
+        <Literal>Project</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
