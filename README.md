@@ -1,132 +1,111 @@
 # GraphCoBots-KG
 
-**GraphCoBots-KG** contains the core **Knowledge Graph (KG) artifacts** that support the GraphCoBots family of conversational AI chatbots for museums and cultural heritage organizations. The repository provides the semantic structures, schema definitions, and structured data exports used consistently across the GraphCoBots ecosystem.
+## Overview
 
-This repository is part of the broader **GraphCoBots** research initiative, which investigates distributed, collaborative, and Knowledge Graph–driven multi-chatbot architectures for cultural heritage applications.
+GraphCoBots-KG is the core Knowledge Graph (KG) repository of the GraphCoBots research initiative.  
+It contains the semantic models, ontology definitions, and structured graph data used to represent cultural heritage knowledge related to:
+
+- the life and works of Nikos Kazantzakis, and  
+- selected artefacts from the Nikos Kazantzakis Museum.
+
+This repository provides the declarative knowledge layer that underpins the distributed and collaborative conversational AI architecture presented in the GraphCoBots research work. It is designed as a reusable, version-controlled research artifact that supports transparency, reproducibility, and long-term knowledge maintenance.
 
 ---
 
 ## Research Context
 
-This repository serves as a research artifact addressing:
+Knowledge Graphs play a central role in the GraphCoBots architecture by enabling:
 
-* Knowledge Graph modeling for cultural heritage domains
-* Semantic representation of museum knowledge
-* Interoperable and reusable graph datasets for conversational AI
-* Reproducibility and transparency in KG-based systems
+- structured and semantically rich knowledge representation,
+- interoperability across multiple chatbot services,
+- continuous knowledge updates without retraining conversational models, and
+- controlled access to sensitive or partially documented cultural heritage data.
 
-The Knowledge Graph artifacts are designed to be **declarative, portable, and version-controlled**, enabling both experimental evaluation and practical deployment.
+Rather than embedding museum knowledge directly into chatbot logic, GraphCoBots-KG externalizes domain knowledge into a graph-based representation, allowing conversational agents to retrieve, reuse, and reason over shared knowledge resources.
 
 ---
 
 ## Repository Structure
 
-```
 .
-├── schema/                 # Schema definitions, constraints, and indexes
-├── data/                   # Knowledge Graph exports (Cypher, CSV, JSON-LD)
-├── examples/               # Example queries and usage scripts
-├── docs/                   # KG documentation and modeling notes
-├── .gitignore              # Git ignore configuration
-├── LICENSE                 # Apache License 2.0 (code and tooling)
-├── LICENSE-DATA            # CC BY 4.0 (Knowledge Graph content)
-└── README.md               # Project documentation
-```
-
----
-
-## Knowledge Graph Artifacts
-
-### Schema Definitions
-
-The `schema/` directory contains:
-
-* Node label definitions
-* Relationship type specifications
-* Property constraints and index configurations
-
-These ensure semantic consistency and data integrity across all GraphCoBots Knowledge Graph instances.
-
----
-
-### Data Exports
-
-The `data/` directory provides structured Knowledge Graph exports in portable formats, such as:
-
-* `.cypher` scripts for Neo4j import
-* `.csv` files compatible with graph import pipelines
-* Optional Linked Data serializations (e.g., JSON-LD)
-
-Binary database files are intentionally excluded to support reproducibility.
-
----
-
-### Examples
-
-The `examples/` directory includes:
-
-* Sample Cypher queries
-* Import and initialization scripts
-* Demonstrative graph traversal examples
-
-These files are intended to facilitate reuse by researchers and developers.
+├── schema/                 # Ontology and schema definitions  
+├── data/                   # Knowledge Graph exports and Cypher scripts  
+├── examples/               # Example Cypher queries and import scripts  
+├── docs/                   # Modeling notes and documentation  
+├── KazantzakisOnto_v5.owl  # Core ontology of the domain  
+├── Full KG.txt             # Complete Cypher export of the Knowledge Graph  
+├── LICENSE                 # Apache License 2.0  
+├── LICENSE-DATA            # Creative Commons Attribution 4.0  
+└── README.md               # Repository documentation  
 
 ---
 
 ## Usage
 
-### Importing into Neo4j
+### Loading the Knowledge Graph into Neo4j
 
-1. Start a Neo4j instance (Desktop, Docker, or Aura)
-2. Ensure APOC procedures are enabled
-3. Load schema definitions:
+The Knowledge Graph can be reconstructed in a Neo4j database using the provided Cypher export.
 
-```cypher
-:source schema/constraints.cypher
-```
+1. Start a Neo4j instance (Desktop, Docker, or Cloud).
+2. Ensure Cypher execution is enabled.
+3. Load the graph using:
 
-4. Load Knowledge Graph data:
+:source Full KG.txt
 
-```cypher
-:source data/graph.cypher
-```
+This command recreates the nodes, relationships, and properties defined in the Knowledge Graph.
 
-These steps reconstruct the Knowledge Graph in a clean Neo4j database instance.
+Note: No Neo4j database files are stored in this repository. Only declarative artifacts are provided to ensure portability and reproducibility.
 
 ---
 
 ## Licensing
 
-This repository follows a **dual-license model**:
+This repository follows a dual-license model, separating software artifacts from knowledge content:
 
-* **Code and tooling**: Apache License 2.0 (see `LICENSE`)
-* **Knowledge Graph content and data**: Creative Commons Attribution 4.0 International (CC BY 4.0) (see `LICENSE-DATA`)
+- Code, scripts, and tooling are licensed under the Apache License 2.0.
+- Knowledge Graph data and ontology files are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0).
 
-Users are responsible for complying with the applicable license depending on the material reused.
+Please consult the respective license files before reuse or redistribution.
+
+---
+
+## Reuse and Reproducibility
+
+GraphCoBots-KG is intended for:
+
+- academic research on Knowledge Graph–based conversational AI,
+- experimentation with cultural heritage knowledge modeling,
+- integration into distributed or collaborative chatbot systems,
+- reproducible evaluation of KG-driven information retrieval.
+
+The repository avoids proprietary formats and binary database dumps, ensuring long-term accessibility and transparency.
+
+---
+
+## Relation to the GraphCoBots System
+
+This repository provides the knowledge backbone for the GraphCoBots system, supporting:
+
+- domain-specific chatbot services,
+- collaborative multi-chatbot orchestration,
+- hybrid Conversational AI and Generative AI integration.
+
+While designed to be used alongside the GraphCoBots chatbot repositories, GraphCoBots-KG can also be reused independently in other Knowledge Graph–driven applications.
 
 ---
 
 ## Citation
 
-If you use this Knowledge Graph or its components in academic research, please cite the relevant **GraphCoBots** publications. A `CITATION.cff` file may be added to facilitate automated citation workflows.
-
----
-
-## Notes for Researchers and Developers
-
-* Knowledge Graph artifacts are provided in declarative formats
-* Database binaries are intentionally excluded
-* Schema and data should be versioned separately
-* Follow semantic naming conventions to preserve interoperability
+If you use this repository or its contents in academic work, please cite the corresponding GraphCoBots publications that describe the architecture, implementation, and evaluation of the system.
 
 ---
 
 ## Contact
 
-For research inquiries, collaboration opportunities, or technical questions, please contact the repository owner via GitHub.
+For questions regarding the Knowledge Graph design, ontology modeling, or reuse in research contexts, please contact the repository owner via GitHub.
 
 ---
 
 ## Acknowledgements
 
-This repository supports ongoing research on Knowledge Graph–driven conversational AI for cultural heritage, contributing to transparent, reusable, and semantically rich museum information systems.
+This repository supports ongoing research in Knowledge Graph–driven conversational AI for cultural heritage, contributing to scalable, interpretable, and curator-controlled museum information systems.
