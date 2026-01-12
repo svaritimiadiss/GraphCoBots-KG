@@ -174,21 +174,3 @@ CREATE
 (Exhibit13)-[:ISASSOCIATEDWITH]->(Naxos),
 (Exhibit20)-[:ISASSOCIATEDWITH]->(Heraklion),
 (Exhibit21)-[:ISASSOCIATEDWITH]->(Athens);
-
-
-MATCH (books:book) 
-RETURN books
-
-MATCH (books:BOOK) 
-WHERE books.type = "Μυθιστόρημα" 
-RETURN books
-
-MATCH (book:ΒΟΟΚ) 
-WHERE book.type = "Μυθιστόρημα" 
- RETURN book
-
-MATCH (book:ΒΟΟΚ) 
-WHERE book.PublicationYear= 1954
-RETURN book
-
-
