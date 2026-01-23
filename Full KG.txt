@@ -100,10 +100,10 @@ CREATE
 (Hall1: HALL {name:"Είσοδος", name_en: "Entrance", floor: "Ισόγειο"}), 
 (Hall2: HALL {name:"Βιογραφικά", floor: "Ισόγειο"}), 
 (Hall3: HALL {name:"Οδύσσεια", floor: "Ισόγειο"}),
-(Hall4: HALL {name:" Αίθουσα προβολών", floor: "1ος"}), 
-(Hall5: HALL {name:" Γλυπτοθήκη", floor: "Σκάλα"}), 
-(Hall6: HALL {name:" Θέατρο", floor: "1ος"}),
-(Hall7: HALL {name:" Μυθιστορήματα ", floor: "1ος"}),
+(Hall4: HALL {name:"Αίθουσα προβολών", floor: "1ος"}), 
+(Hall5: HALL {name:"Γλυπτοθήκη", floor: "Σκάλα"}), 
+(Hall6: HALL {name:"Θέατρο", floor: "1ος"}),
+(Hall7: HALL {name:"Μυθιστορήματα", floor: "1ος"}),
 (Museum: MNK {name:"Μουσείο Νίκος Καζαντζάκης", creationdate: 1983, location: "Μυρτιά Ηρακλείου"}),
 (Exhibit1: EXHIBIT {name:"Πορτρέτο Νίκου Καζαντζακη ", exhibition: "Πινακοθήκη Α", Datecreated:1955, painter: "Tony de Lyee", collection: "Έργα τέχνης"}),
 (Exhibit2: EXHIBIT {name:" Πορτρέτο Νίκου Καζαντζακη", exhibition: "Πινακοθήκη Α", painter: "Τάκης Παρλαβάντζας", collection: "Έργα τέχνης"}),
@@ -174,3 +174,4 @@ CREATE
 (Exhibit13)-[:ISASSOCIATEDWITH]->(Naxos),
 (Exhibit20)-[:ISASSOCIATEDWITH]->(Heraklion),
 (Exhibit21)-[:ISASSOCIATEDWITH]->(Athens);
+
