@@ -137,6 +137,8 @@ CREATE
 (Exhibit104: EXHIBIT {name:"Πορσελάνινο τσαγερό", exhibition: "Τραπέζι", showcase:10, collection: "Προσωπικά Αντικείμενα"}),
 (Exhibit112: EXHIBIT {name:"Μικρό σημειωματάριο με καραβάκι", exhibition: "Οδύσσεια", showcase:10, collection: "Αυτόγραφα"}),
 (Exhibit148: EXHIBIT {name:"Χάλκινη προτομή toy Νίκου Καζαντζάκη", material: " Χαλκός", Datecreated: 1948, creator: "Φ. Ευθυμιάδη", exhibition: "Γλυπτοθήκη", showcase:13, collection: "Έργα τέχνης"}),
+(Exhibit149: EXHIBIT {name:"Ορειχάλκινη προτομή του του Νίκου Καζαντζάκη", material:"Ορείχαλκος", Datecreated: 1984, creator: "Fengele-Meninghof Heinrich", exhibition:"Γλυπτοθήκη", showcase:14, collection: "Έργα τέχνης"}),
+(Exhibit150: EXHIBIT {name:"Ν.Κ. Προτομή του Νίκου Καζαντζάκη", material:"Μπρούντζος", Datecreated: 1957, creator: "Θωμάς Παπαδοπεράκης", exhibition:"Γλυπτοθήκη", showcase:14, collection: "Έργα τέχνης"}),
 (Exhibit151: EXHIBIT {name:"Χάλκινη προτομή του Νίκου Καζαντζάκη", material: " Χαλκός", Datecreated: 1957, creator: " Alice Laurant ", exhibition: "Γλυπτοθήκη", showcase:14, collection: "Έργα τέχνης"}),
 (Exhibit162: EXHIBIT {name:" Φωτογραφία με τον Κώστα Σφακιανάκη", exhibition: "Πρώιμα", showcase:15, collection: "Φωτογραφικό Αρχείο"}),
 (Exhibit211: EXHIBIT {name:" Ο Νίκος Καζαντζάκης στην Αίγινα με τα παιδιά του Χάνου", Date: 1927, exhibition: "Παιδικά", showcase:20, collection:" Φωτογραφικό Αρχείο"}),
@@ -180,6 +182,8 @@ CREATE
 (Exhibit79)-[:ISLOCATEDIN]-> (Hall3), 
 (Exhibit112)-[:ISLOCATEDIN]-> (Hall3), 
 (Exhibit148)-[:ISLOCATEDIN]-> (Hall5), 
+(Exhibit149)-[:ISLOCATEDIN]->(Hall5),
+(Exhibit150)-[:ISLOCATEDIN]->(Hall5),
 (Exhibit151)-[:ISLOCATEDIN]-> (Hall5),
 (Exhibit162)-[:ISLOCATEDIN]-> (Hall6), 
 (Exhibit211)-[:ISLOCATEDIN]-> (Hall6),
@@ -188,5 +192,6 @@ CREATE
 (Exhibit13)-[:ISASSOCIATEDWITH]->(Naxos),
 (Exhibit20)-[:ISASSOCIATEDWITH]->(Heraklion),
 (Exhibit21)-[:ISASSOCIATEDWITH]->(Athens);
+
 
 
