@@ -151,7 +151,7 @@ CREATE
 (Exhibit183:EXHIBIT {name:"Το φτερωτό άλογο (Αντίγραφο)", exhibition:"Παιδικά", showcase:20, collection:"Αυτόγραφα"}),
 (Exhibit197:EXHIBIT {name:"Στα Παλάτια της Κνωσού, ελληνική έκδοση", publisher:"Εκδόσεις Ελένης Ν. Καζαντζάκη", place:"Αθήνα", year:1986, original_year:1981, exhibition:"Παιδικά", showcase:20, collection:"Βιβλία-Μελέτες"}),
 (Exhibit211: EXHIBIT {name:" Ο Νίκος Καζαντζάκης στην Αίγινα με τα παιδιά του Χάνου", Date: 1927, exhibition: "Παιδικά", showcase:20, collection:" Φωτογραφικό Αρχείο"}),
-(Exhibit213:EXHIBIT {name:"Φωτογραφία με Έλσα Λάνγκε σε κήπο στη Γερμανία", date:1923, exhibition:"Θέατρο 1", showcase:21, collection:"Φωτογραφικό Αρχείο"})
+(Exhibit213:EXHIBIT {name:"Φωτογραφία με Έλσα Λάνγκε σε κήπο στη Γερμανία", date:1923, exhibition:"Θέατρο 1", showcase:21, collection:"Φωτογραφικό Αρχείο"}),
 (Exhibit221:EXHIBIT {name:"Φωτογραφία Μινωτή", exhibition:"Θέατρο 1", showcase:21, collection:"Φωτογραφικό Αρχείο"}),
 (Exhibit229:EXHIBIT {name:"Θεατρικό κοστούμι από την παράσταση «Βούδας» (ρόλος: Νέος Κοάνγκ)", date:1978, actor:"Κώστας Καστανάς", costume_designer:"Γιώργος Ανεμογιάννης", exhibition:"Κοστούμια", showcase:23, collection:"Θεατρικό Αρχείο"}),
 (Exhibit232:EXHIBIT {name:"Μουσική του Μίκη Θεοδωράκη για τον «Καποδίστρια»", creator:"Μίκης Θεοδωράκης", related_work:"Καποδίστριας – Νίκος Καζαντζάκης", pages:4, exhibition:"Καποδίστριας", showcase:24, collection:"Αυτόγραφα"}),
@@ -258,6 +258,7 @@ CREATE
 (Exhibit13)-[:ISASSOCIATEDWITH]->(Naxos),
 (Exhibit20)-[:ISASSOCIATEDWITH]->(Heraklion),
 (Exhibit21)-[:ISASSOCIATEDWITH]->(Athens);
+
 
 
 
