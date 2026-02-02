@@ -36,5 +36,8 @@ Cypher Query 3: Return the exhibits that are located at halls of the floor named
 Cypher Query 4: Return the hall that is named {"Entrance"}
 {MATCH (hall:HALL) }
 {WHERE hall.name_en = "Entrance" }
-
 {RETURN hall}
+
+
+
+
