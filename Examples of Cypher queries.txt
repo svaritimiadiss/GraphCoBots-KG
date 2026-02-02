@@ -1,0 +1,40 @@
+
+Examples of Cypher queries 
+
+NK life and works KG
+
+Cypher Query 1: Return all books 
+{MATCH (books:book) }
+{RETURN books}
+
+Cypher Query 2: Return all books that have as type a novel 
+{MATCH (books:BOOK) }
+{WHERE books.type = "novel" }
+{RETURN books}
+
+Cypher Query 3: Return books that are published in 1954
+{MATCH (books:BOOK) }
+{WHERE book.PublicationYear= 1954}
+{RETURN book}
+
+Nikos Kazantzakis museum artefacts
+
+Cypher Query 1: Return the exhibits that are located in the hall named "Biography" and belong to the collection "Autographs".
+{MATCH (exhibits:EXHIBIT) - [:ISLOCATEDIN] -> (hall:HALL)}
+{WHERE hall.name_en = "Biography" AND exhibits.collection_en = "Autographs"}
+{RETURN exhibits }
+
+Cypher Query 2: Return the url address of the image from the exhibit that is located in the hall named "Odysseia"
+{MATCH (exhibits:EXHIBIT) - [:ISLOCATEDIN] -> (hall:HALL)}
+{WHERE hall.name_en ="Odysseia"}
+{RETURN exhibits.url}
+
+Cypher Query 3: Return the exhibits that are located at halls of the floor named "Ground"
+{MATCH (exhibits:EXHIBIT) - [:ISLOCATEDIN] -> (hall:HALL)}
+{WHERE hall.floor_en = "Ground" }
+{RETURN exhibits,hall }
+
+Cypher Query 4: Return the hall that is named {"Entrance"}
+{MATCH (hall:HALL) }
+{WHERE hall.name_en = "Entrance" }
+{RETURN hall}
